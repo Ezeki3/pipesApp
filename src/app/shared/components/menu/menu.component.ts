@@ -16,36 +16,30 @@ export class MenuComponent implements OnInit {
   ngOnInit() {
     this.menuItems = [
       {
-        label: 'Options',
+        label: 'Pipes de Angular',
+        icon: 'pi pi-desktop',
         items: [
           {
             label: 'Update',
-            icon: 'pi pi-refresh',
-            // command: () => {
-            //     this.update();
-            // }
+            icon: 'pi pi-align-left',
           },
           {
-            label: 'Delete',
-            icon: 'pi pi-times',
-            // command: () => {
-            //     this.delete();
-            // }
-          }
+            label: 'Números',
+            icon: 'pi pi-dollar',
+          },
+          {
+            label: 'No comunes',
+            icon: 'pi pi-globe',
+          },
         ]
       },
       {
-        label: 'Navigate',
-        items: [
+        label: 'Pipes personalizados',
+        icon: 'pi pi-cog',
+        items:[
           {
-            label: 'Angular',
-            icon: 'pi pi-external-link',
-            url: 'http://angular.io'
-          },
-          {
-            label: 'Router',
-            icon: 'pi pi-upload',
-            routerLink: '/fileupload'
+            label: 'Otro elemento',
+            icon: 'pi pi-cog',
           }
         ]
       }
