@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BasicsPageComponent implements OnInit {
 
+  public nameLower:string = 'william';
+  public nameUpper:string = 'WILLIAM';
+  public fullName:string = 'wIlLiAM SAncHeZ'
+
   constructor() { }
 
   ngOnInit(): void {
