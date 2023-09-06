@@ -11,6 +11,8 @@ export class BasicsPageComponent implements OnInit {
   public nameUpper:string = 'WILLIAM';
   public fullName:string = 'wIlLiAM SAncHeZ'
 
+  public customDate: Date = new Date();
+  
   constructor() { }
 
   ngOnInit(): void {
