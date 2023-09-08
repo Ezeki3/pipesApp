@@ -24,4 +24,17 @@ export class UncommonPageComponent implements OnInit {
     this.name = 'Melisa',
     this.gender = 'female'
   }
+
+  // i18nPlural
+  public clients: string[] = ['Maria', 'Ramon', 'Fernando', 'Eduardo', 'Melissa', 'Neftali', 'Juana']
+  public clientsMap = {
+    '=0': 'no tenemos ningun cliente esperando',
+    '=1': 'tenemos un cliente esperando', 
+    '=2': 'tenemos dos clientes esperando',
+    'other': 'tenemos # clientes esperando'
+  }
+
+  deleteClient():void{
+    this.clients.shift()
+  }
 }
